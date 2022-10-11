@@ -1,0 +1,44 @@
+
+
+@media screen and (max-width: 768px)
+{
+    div, h2, p
+    {
+        font-size: 15px;
+    }
+   
+    
+
+    .entete{
+        max-width:100%;
+        height:auto;
+    }
+    
+    #promo{
+        max-width:100%;
+        height:auto;
+    }
+    
+    ul{
+        max-width:100%;
+        min-height:70px;
+        height:auto;
+        display:block;
+    }
+
+    .menuli{
+        margin-bottom: 5px;
+    }
+
+    #corp{
+        display:block;
+        width:168%;
+
+    }
+
+    #colonne_droite{
+        display:none;
+    }
+
+}
+

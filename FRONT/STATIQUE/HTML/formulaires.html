@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+
+<body>
+
+
+
+<form action="destination.php" method="post">
+
+    <fieldset>
+
+        <legend>Vos coordonnées</legend>
+<br>
+        <label for="nom">Votre nom* :</label><input type="text" name="nom"><br>
+
+        <label for="prenom">Votre prénom* :</label><input type="text" name="prenom"><br>
+<br>
+        <label for="sexe">Sexe* :</label><input type="radio" name="homme" value="homme"> homme <input type="radio" name="femme" value="femme"> femme<br>
+<br>
+        <label for="date">Date de naissance* :</label><input type="date" name="ddn" id="date"><br>
+
+        <label for="departement">Code postal* :</label><input type="text" name="departement"><br>
+
+        <label for="adresse">Adresse :</label><input type="text" name="adresse"><br>
+
+        <label for="ville">Ville :</label><input type="text" name="ville"><br>
+
+        <label for="mail">Email* :</label><input type="email" name="mail"><br>
+
+
+       </fieldset>
+<br>
+    <fieldset>
+
+        <legend>Votre demande</legend>
+<br>
+        <label for="sujet">Sujet* :</label>
+        <select id="sujet">
+            <option value="Veuillez selectionner un sujet" selected>Veuillez selectionner un sujet</option>
+            <option value="Mes commandes">Mes commandes</option>
+            <option value="Question sur un produit">Question sur un produit</option>
+            <option value="Reclamation">Réclamation</option>
+            <option value="Autres">Autres</option>
+
+        </select><br>
+<br>
+        <label for="questions">Votre question* :</label><textarea name="questions" rows="3" cols="18"></textarea>
+
+    </fieldset>
+
+<br>
+
+    <input type="checkbox" name="accepter"> *J'accepte le traitement informatique de ce formulaire<br>
+<br>
+
+<input type="submit" value="Envoyer">&nbsp;&nbsp;<input type="reset" value="Annuler">
+
+</form>
+
+
+</body>
+
+
+
+
+
+</html>

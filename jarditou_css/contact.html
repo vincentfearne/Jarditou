@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="assets/css/768px.css">
+</head>
+
+<body>
+    <header>
+        <div class="entete">
+        <img src="/jarditou_css/src/img/jarditou_logo.jpg" width="175" height="50" alt="logo" title="logo jarditou" class="entete">
+            <div id="toutlejardin">
+                Tout le jardin
+            </div>
+        </div>
+    </header>
+    <!-----------------------Menu----------------------------------------->
+    <nav>
+        <ul>
+            <li class="menuli"><a href="index.html" title="Accueil" class="menu">Accueil</a></li>      <!--lien menant à la page d'accueil-->
+            <li class="menuli"><a href="tableau.html" title="tableau" class="menu">Tableau</a></li>    <!--lien menant à la page du tableau-->
+            <li class="menuli"><a href="contact.html" title="contact" class="menu">Contact</a></li>    <!--lien menant au formulaire de contact-->
+        </ul>
+    </nav><br>
+    <!---------------------Banderolle promotion---------------------------->
+    <img src="/jarditou_css/src/img/promotion.jpg" alt="promotion" title="promotion" id="promo"><br><br><br>
+<section id="corp">
+    <article id="texte">
+    <div>*Ces zones sont obligatoires</div><br>
+    <form action="destination.php" method="post">
+        <fieldset> 
+            <legend>Vos coordonnées</legend><br>
+            <label for="nom">Votre nom* :</label><input type="text" name="nom" id="nom"><br>   
+            <label for="prenom">Votre prénom* :</label><input type="text" name="prenom" id="prenom"><br><br>  
+            <label for="sexe">Sexe* :</label><input type="radio" name="homme" value="homme" id="sexe"> homme <input type="radio" name="femme" value="femme" class="sexe"> femme<br><br>
+            <label for="date">Date de naissance* :</label><input type="date" name="ddn" id="date"><br>
+            <label for="departement">Code postal* :</label><input type="text" name="departement" id="departement"><br>
+            <label for="adresse">Adresse :</label><input type="text" name="adresse" id="adresse"><br>
+            <label for="ville">Ville :</label><input type="text" name="ville" id="ville"><br>
+            <label for="mail">Email* :</label><input type="email" name="mail" id="mail"><br>
+           </fieldset><br>
+        <fieldset>
+            <legend>Votre demande</legend><br>
+            <label for="sujet">Sujet* :</label>
+            <select id="sujet">
+                <option value="Veuillez selectionner un sujet" selected>Veuillez selectionner un sujet</option>
+                <option value="Mes commandes">Mes commandes</option>
+                <option value="Question sur un produit">Question sur un produit</option>
+                <option value="Reclamation">Réclamation</option>
+                <option value="Autres">Autres</option>
+            </select><br><br>
+            <label for="questions">Votre question* :</label><textarea name="questions" rows="3" cols="18" id="questions"></textarea>
+        </fieldset><br>
+        <input type="checkbox" name="accepter"> *J'accepte le traitement informatique de ce formulaire<br><br>
+    <input type="submit" value="Envoyer">&nbsp;&nbsp;<input type="reset" value="Annuler">
+    </form>
+</article>
+<article id="colonne_droite">
+    <p>[COLONNE DROITE]</p>
+    </article>
+</section> 
+<footer>
+    <ul>
+        <li class="menuli"><a href="#" title="Mention légales" class="menufin">Mention légales</a></li>
+        <li class="menuli"><a href="#" title="Horaires" class="menufin">Horaires</a></li>
+        <li class="menuli"><a href="#" title="Plan du site" class="menufin">Plan du site</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
