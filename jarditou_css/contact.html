@@ -31,18 +31,48 @@
 <section id="corp">
     <article id="texte">
     <div>*Ces zones sont obligatoires</div><br>
-    <form action="destination.php" method="post">
+
+
+
+
+
+    <form id="jarditou" name="jarditou">
+
+
         <fieldset> 
             <legend>Vos coordonnées</legend><br>
-            <label for="nom">Votre nom* :</label><input type="text" name="nom" id="nom"><br>   
-            <label for="prenom">Votre prénom* :</label><input type="text" name="prenom" id="prenom"><br><br>  
+
+            <label for="nom">Votre nom* :</label>
+            <input type="text" name="nom" id="nom" minlength="1">
+            <span id="nom_manquant"></span><br>  
+
+            <label for="prenom">Votre prénom* :</label>
+            <input type="text" name="prenom" id="prenom">
+            <span id="prenom_manquant"></span><br><br>  
+
             <label for="sexe">Sexe* :</label><input type="radio" name="homme" value="homme" id="sexe"> homme <input type="radio" name="femme" value="femme" class="sexe"> femme<br><br>
-            <label for="date">Date de naissance* :</label><input type="date" name="ddn" id="date"><br>
-            <label for="departement">Code postal* :</label><input type="text" name="departement" id="departement"><br>
-            <label for="adresse">Adresse :</label><input type="text" name="adresse" id="adresse"><br>
-            <label for="ville">Ville :</label><input type="text" name="ville" id="ville"><br>
-            <label for="mail">Email* :</label><input type="email" name="mail" id="mail"><br>
+           
+            <label for="date">Date de naissance* :</label>
+            <input type="date" name="ddn" id="date" requiered>
+            <span id="date_manquante"><br>
+            
+            <label for="departement">Code postal* :</label>
+            <input type="text" name="departement" id="departement" maxlength="5">
+            <span id="departement_manquant"></span><br>
+           
+            <label for="adresse">Adresse :</label>
+            <input type="text" name="adresse" id="adresse">
+            <span id="adresse_manquante"></span><br>
+            
+            <label for="ville">Ville :</label>
+            <input type="text" name="ville" id="ville">
+            <span id="ville_manquante"></span><br>
+            
+            <label for="mail">Email* :</label>
+            <input type="email" name="mail" id="mail">
+            <span id="mail_manquant"></span><br>
            </fieldset><br>
+
         <fieldset>
             <legend>Votre demande</legend><br>
             <label for="sujet">Sujet* :</label>
@@ -53,11 +83,22 @@
                 <option value="Reclamation">Réclamation</option>
                 <option value="Autres">Autres</option>
             </select><br><br>
-            <label for="questions">Votre question* :</label><textarea name="questions" rows="3" cols="18" id="questions"></textarea>
+
+            <label for="questions">Votre question* :</label>
+            <textarea name="questions" rows="3" cols="18" id="questions"></textarea>
+            <span id="questions_manquantes"></span>
+
+
         </fieldset><br>
-        <input type="checkbox" name="accepter"> *J'accepte le traitement informatique de ce formulaire<br><br>
-    <input type="submit" value="Envoyer">&nbsp;&nbsp;<input type="reset" value="Annuler">
+        <input type="checkbox" name="accepter" id="accepter"> *J'accepte le traitement informatique de ce formulaire<br><br>
+
+
+        <input type="submit" value="Envoyer" name="envoi" id="envoi"><input type="reset" value="Annuler">
     </form>
+
+
+
+
 </article>
 <article id="colonne_droite">
     <p>[COLONNE DROITE]</p>
@@ -71,5 +112,7 @@
     </ul>
 </footer>
 
+
+<script src="/jarditou_css/assets/js/evaluation5js.js"></script>
 </body>
 </html>

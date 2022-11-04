@@ -17,7 +17,7 @@
     <div id="label1">Entrez votre proposition</div>
     <input type="text" id="textBox1" value="">
     <input type="button" id="button1" value="Verifier" onclick="verif();"> 
-    <div id="indice"></div>
+   
 
 
 
@@ -27,28 +27,38 @@
     let R = Math.floor(Math.random() * 100) + 1;
 
     console.log(R);
- 
+    let t = 10;
 
     function verif()
     {
         var num = document.getElementById("textBox1").value;
         console.log(num);
 
-        while (num != R)
+        while (num != R && t>0)
         {
             if (num > R)
             {
-                document.getElementById("indice").innerHTML = "Trop grand !";
+                var num = parseInt(prompt("Trop grand !"));
+                
+                t--
             }
             else
             {
-                // document.write("<h3>Votre nombre est trop grand</h3>");
-                var num = parseInt(prompt("Essaye encore"));
+                var num = parseInt(prompt("Trop bas !"));
+                t--
             }
         } 
 
+        if (num = R)
+        {
+            alert("Bravo vous avez trouvé !");
+        }
+        else if (t=0)
+        {
+            alert("Merde ! Vous avez perdu !");
+        }
         
-    };
+    }
 
 
 
